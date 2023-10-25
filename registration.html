@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title><style>
+        
+
+.center
+{
+    height:420px;
+    width:350px;
+    background-color:rgb(196, 45, 226);
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.heading
+{
+    text-align: center;
+    font-family: verdana;
+    color:white;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+
+}
+.ip
+{
+    text-align: center;
+}
+.ipmon
+{
+    width:70%;
+    height:35px;
+    text-align: center;
+    font-family: verdana;
+    font-size: medium;
+    color:rgb(0, 0, 0);
+    background-color: rgb(226, 255, 196);
+    border:none;
+    border-radius: 20px;
+}
+.gen
+{
+    background-color: rgb(226, 255, 196);
+    display: inline-block;
+    padding:8px;
+    border-radius: 20px;
+
+}
+.genmon
+{
+    color:rgb(0, 0, 0); 
+    font-weight: 500; 
+    font-size: 17px; 
+    font-family: verdana;
+}
+.dist
+{
+    background-color: rgb(226, 255, 196);
+    width:70%;
+    height:35px;
+    text-align: center;
+    font-family: verdana;
+    font-size: medium;
+    color:rgb(0, 0, 0);
+    background-color: rgb(226, 255, 196);
+    border:none;
+    border-radius: 20px;
+
+}
+.file
+{
+    padding:8px;
+    background-color: rgb(226, 255, 196);
+    width:70%;
+    border-radius: 20px;
+    border:none;
+    text-align: center;
+    font-family: verdana;
+    font-size: medium;
+    color:rgb(10, 10, 10);
+}
+.regbtn
+{
+    padding:15px;
+    font-size: medium;
+    border:none;
+    background-color:rgb(249, 251, 252) ;
+    border-radius: 20px;
+
+}
+.regbtn:hover{
+    background-color:rgba(2, 59, 82, 0.932) ;
+    color:rgb(133, 83, 8);
+    cursor: pointer;
+
+}
+    </style>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body style="background-image: linear-gradient(to right, rgb(221, 141, 245), rgb(224, 223, 222));">
+    <div class="center">
+        <div class="heading">
+            <h2>User Registration</h2>
+        </div>
+        <div class="ip">
+            <form>
+                <input type="text" placeholder="Create a username" required class="ipmon">
+                <br>
+                <br>
+                <input type="password" name="pass" class="ipmon" placeholder="Create a password">
+                <br>
+                <br>
+                <div class="gen"> 
+                    <span class="genmon">Male</span><input type="radio" name="gender" >
+                    <span class="genmon">Female</span><input type="radio" name="gender" >
+                    <span class="genmon">Other</span><input type="radio" name="gender" >
+                </div>
+                <br>
+                <br>
+                <select name="district" id="" class="dist">
+                        <option value="">Select District</option>
+                        <option value="Palakkad">Palakkad</option>
+                        <option value="Ernakulam">Ernakulam</option>
+                        <option value="Thrissur">Thrissur</option>
+                        <option value="Kottayam">Kottayam</option>
+                </select>
+                <br>
+                <br>
+                <input type="file" class="file">
+                <br>
+                <br>
+                <input type="submit" value="Register" class="regbtn">
+            </form>
+            <br>
+            <br>
+            <br>
+            <a href="index.html" style="color:rgb(0, 0, 0); text-decoration: none;">Back To Home</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
